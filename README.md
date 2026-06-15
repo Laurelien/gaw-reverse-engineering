@@ -86,7 +86,7 @@ This line acts as a request signature using MD5 hashing over a concatenation of 
 
 Here are the interesting findings that I made :
 
-- Session values ()`client_key` , `client_secret` and `account_key`) transmitted in plaintext during initial connection.
+- Session values (`client_key` , `client_secret` and `account_key`) transmitted in plaintext during initial connection.
 - RC4 key partially hardcoded inside Lua's bytecode
 - Reimplementation of the RC4 algorithm
 - Custom MD5 signature scheme (non-standard, weaker than HMAC)
